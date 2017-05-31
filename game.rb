@@ -11,6 +11,10 @@ class Game
     @players.rotate!
   end
 
-  
+  def snake_or_ladder(player)
+    @board.square_array[player.position]
+  end
+
+
 
 end
