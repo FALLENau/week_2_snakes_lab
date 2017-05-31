@@ -15,6 +15,4 @@ class Game
     @board.square_array[player.position]
   end
 
-
-
 end
