@@ -4,8 +4,17 @@ class Game
   def initialize(players, board, die)
     @players = players
     @board = board
+    @current_player = player[0]#
     @die = die
   end
+
+
+  def next_turn(square)#
+    return if (win)#
+    modifier = move_player(square)#
+    update_log(square, modifier)#
+    update_current_player#
+  end#
 
   def players_rotate()
     @players.rotate!
